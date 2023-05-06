@@ -1,0 +1,385 @@
+@import './variables.sass'
+@import './mixins.sass'
+
+@font-face
+  font-family: Poppins-Bold
+  src: url('/fonts/Poppins-Bold.ttf')
+
+@font-face
+  font-family: Poppins
+  src: url('/fonts/Poppins-Medium.ttf')
+
+@font-face
+  font-family: Poppins-Light
+  src: url('/fonts/Poppins-Light.ttf')
+
+body
+  background-color: $white1
+
+h1
+  font-family: Poppins
+  color: $black
+
+p
+  font-family: Poppins
+  background-color: $white1
+
+label
+  font-size: 12px
+
+ul
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+li
+  display: inline
+  font-family: Poppins
+  font-size: 14px
+  margin-left: 20px
+  background-color: $white1
+
+table
+  border: 0
+
+input
+  border-radius: 10px
+  border: 1px solid #eceef8
+  height: 20px
+  font-size: 16px
+  padding: 10px
+  width: 90%
+
+.loginlink
+  text-decoration: none
+  color: $black
+  cursor: pointer
+  padding-bottom: 15px
+
+a.nolinkdecoration
+  text-decoration: none
+  font-family: Poppins
+  font-size: 14px
+
+.titleline
+  font-size: 12px
+  margin: 30px 0px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 1022px
+  
+  @media (max-width: 920px)
+    margin: 40px 0px
+    width: 100%
+    justify-content: space-between
+    min-height: 48px
+    
+.logoTitle
+  margin-left: 16px
+
+.formtitle
+  font-family: Poppins
+  font-size: 14px
+  margin-left: 20px
+  background-color: $white1
+
+.lavbutton
+  border-radius: 10px
+  border: 0px
+  background: $lavender1
+  font-family: Poppins
+  font-size: 16px
+  text-align: center
+  color: $white1
+  padding: 5px
+  height: 48px
+  width: 100%
+  margin-top: 25px
+  cursor: pointer
+
+.checksumbox
+  border-radius: 10px
+  background: #eceef8
+  color: $lavender1
+  text-align: center
+  padding: 15px
+  margin-bottom: 20px
+  word-wrap: break-word
+
+.filebox
+  border-radius: 10px
+  border: 1px solid #eceef8
+  padding: 15px
+  margin-bottom: 25px
+  width: 100%
+
+.filepng
+  width: 45px
+
+  img
+    height: 45px
+
+.lav
+  color: $lavender1
+
+.upload
+  background: $upload
+  cursor: pointer
+
+.uploadbox
+  height: 210px
+  padding: 70px
+  outline: 0
+  
+  @media (max-width: 920px)
+    width: 250px
+    padding: 75px 15px
+  
+  @media (max-width: 320px)
+    width: 210px
+
+.success
+  width: 80px
+  height: 80px
+
+.titlebox
+  border-radius: 25px
+  background: $offwhite
+  font-size: 38px
+  padding: 25px
+  width: 1022px
+  height: 528px
+  text-align: center
+  margin: 0% 5%
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: center
+  min-height: 500px
+
+  @media (max-width: 920px)
+    width: 100%
+    padding-top: 0px
+    font-size: 32px
+
+.contentparent
+  display: flex
+  justify-content: center
+  align-items: center
+  padding-top: 21px
+
+  @media (max-width: 920px)
+    padding-bottom: 148px
+    width: 100%
+    min-height: 400px
+    align-items: flex-start
+    padding-bottom: 40%
+
+.nomobile
+  @media (max-width: 920px)
+    display: none !important
+
+.mobileonly
+  @media (min-width: 920px)
+    padding-top: 200px
+    display: none !important
+    
+.imageshape1
+  background-image: url("/images/shapes1.png")
+  min-width: 277px
+  height: 280px
+  position: relative
+  left: 125px
+  padding-bottom: 140px
+  background-repeat: no-repeat
+  background-position: bottom
+  z-index: 1
+
+.bold
+  font-weight: 500
+
+.imageshape2
+  background-image: url("/images/shapes2.png")
+  min-width: 277px
+  height: 280px
+  position: relative
+  right: 125px
+  padding-bottom: 140px
+  background-repeat: no-repeat
+  background-position: bottom
+  z-index: 1
+
+.contentbox
+  border-radius: 25px
+  border: 1px solid #eceef8
+  background: $white1
+  font-size: 18px
+  text-align: left
+  padding: 30px
+  width: 646px
+  min-height: 344px
+  left: 168px
+  z-index: 2
+  box-shadow: 0 8px 12px -4px rgba(130, 136, 148, 0.24), 0 0 4px 0 rgba(141, 141, 148, 0.16), 0 0 2px 0 rgba(141, 141, 148, 0.12)
+
+  @media (max-width: 920px)
+    min-width: 280px
+    max-width: 360px
+    min-height: unset
+    height: auto
+
+  @media (max-width: 320px)
+    width: 240px
+
+.afterwords
+  margin: 40px 0px
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  margin-left: 5%
+  margin-right: 5%
+  padding-top: 150px
+
+.title
+  font-family: Poppins
+  padding: 35px
+
+  @media (max-width: 920px)
+    padding: 35px 16px
+
+.grey
+  font-size: 14px
+  font-face: Poppins-Bold
+  color: $greytext
+  padding: 3px
+
+.center
+  text-align: center
+
+.right
+  text-align: right
+
+.add-signer-container
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.add-signer
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: flex-end
+  cursor: pointer
+  background: none
+  border: none
+  outline: none
+
+  img
+    margin-right: 10px
+
+.x-icon
+  border: none
+  outline: none
+  background: none
+  cursor: pointer
+  width: 20px
+  height: 20px
+
+  img
+    width: 20px
+    height: 20px
+
+.signer-form-input
+  margin: 8px 0px 4px 0px
+
+  @media (max-width: 920px)
+    -webkit-appearance: none
+    margin-right: 260px
+
+  @media (max-width: 320px)
+    margin-right: 220px
+
+.signer-form-error
+  color: red
+  margin: -5px 0px
+  height: 10px
+  font-size: 12px
+  text-align: center
+  font-face: Poppins-Bold
+
+.remove-signer-button img
+  height: 20px
+  cursor: pointer
+  padding-top: 8px
+
+.halfwidth
+  width: 50%
+  display: inline-block
+
+.fullwidth
+  width: 100%
+
+  input:first-of-type
+    margin-right: 302px
+
+.little
+  font-size: 12px
+
+.dashed
+  border-radius: 25px
+  border: 1px dashed #eceef8
+
+.page
+  height: 100%
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  overflow-x: hidden
+
+.header
+  position: relative
+  z-index: 5
+  margin-top: $top-header-margin
+  justify-content: space-between
+
+.header-buttons
+  width: 206px
+  height: 48px
+  margin-top: 0px
+  cursor: pointer
+  outline: none
+
+  @media (max-width: 920px)
+    width: 174px
+    margin-right: 16px
+
+.header-avatar
+  border-radius: 50%
+  width: 48px
+  height: 48px
+  background-position: center
+  background-size: auto 110%
+  background-repeat: no-repeat
+  cursor: pointer
+
+  @media (max-width: 920px)
+    margin-right: 16px
+
+.center-mobile 
+  margin: 0
+  padding: 0
+  text-align: center
+
+.signerspacing
+  padding-bottom: 12px
+
+.signerspacing:not(:last-child)
+  padding-bottom: 24px
+
+.error
+  color: red
+  font-size: 14px
+  text-align: center
